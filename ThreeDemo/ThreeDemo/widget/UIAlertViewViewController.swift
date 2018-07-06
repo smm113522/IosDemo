@@ -97,6 +97,28 @@ class UIAlertViewViewController: UIViewController {
         button6.addTarget(self,action:#selector(showAlert4), for: .touchUpInside)
         
         self.view.addSubview(button6)
+        
+//        扩展
+        
+        let button7:UIButton = UIButton(type:.contactAdd)
+        //设置按钮位置和大小
+        button7.frame = CGRect(x:10, y:340, width:130, height:30)
+        //设置按钮文字
+        button7.setTitle("扩展", for:.normal)
+        
+        button7.addTarget(self,action:#selector(showAlert5), for: .touchUpInside)
+        
+        self.view.addSubview(button7)
+        
+        let button8:UIButton = UIButton(type:.contactAdd)
+        //设置按钮位置和大小
+        button8.frame = CGRect(x:10, y:380, width:130, height:30)
+        //设置按钮文字
+        button8.setTitle("扩展", for:.normal)
+        
+        button8.addTarget(self,action:#selector(showAlert6), for: .touchUpInside)
+        
+        self.view.addSubview(button8)
 
         // Do any additional setup after loading the view.
     }
@@ -217,6 +239,18 @@ class UIAlertViewViewController: UIViewController {
         alertController.addAction(cancelAction)
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    @IBAction func showAlert5(){
+        //弹出普通消息提示框
+        UIAlertController.showAlert(message: "保存成功!")
+    }
+    
+    @IBAction func showAlert6(){
+        //弹出确认选择提示框
+        UIAlertController.showConfirm(message: "是否提交?") { (_) in
+            print("点击了确认按钮!")
+        }
     }
  
 

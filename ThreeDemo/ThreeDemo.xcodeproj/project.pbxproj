@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA144CB920EF01C000755F54 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA144CB820EF01C000755F54 /* UIAlertController.swift */; };
 		AA31CD6420EC5800007AD3B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA31CD6320EC5800007AD3B4 /* AppDelegate.swift */; };
 		AA31CD6620EC5800007AD3B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA31CD6520EC5800007AD3B4 /* ViewController.swift */; };
 		AA31CD6920EC5800007AD3B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA31CD6720EC5800007AD3B4 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA144CB820EF01C000755F54 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		AA31CD6020EC5800007AD3B4 /* ThreeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA31CD6320EC5800007AD3B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA31CD6520EC5800007AD3B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA144CB720EF019000755F54 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				AA144CB820EF01C000755F54 /* UIAlertController.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		AA31CD5720EC5800007AD3B4 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 		AA31CD6220EC5800007AD3B4 /* ThreeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AA144CB720EF019000755F54 /* utils */,
 				AA31CD8220ECAEE0007AD3B4 /* widget */,
 				AA31CD7520EC6CB0007AD3B4 /* login */,
 				AA31CD6320EC5800007AD3B4 /* AppDelegate.swift */,
@@ -182,6 +193,7 @@
 				AA31CD8E20ECBC83007AD3B4 /* UIAlertViewViewController.swift in Sources */,
 				AA31CD8120ECA8F1007AD3B4 /* UITextFieldController.swift in Sources */,
 				AA31CD6620EC5800007AD3B4 /* ViewController.swift in Sources */,
+				AA144CB920EF01C000755F54 /* UIAlertController.swift in Sources */,
 				AA31CD8C20ECBC33007AD3B4 /* UISliderViewController.swift in Sources */,
 				AA31CD6420EC5800007AD3B4 /* AppDelegate.swift in Sources */,
 				AA31CD7E20EC79AB007AD3B4 /* LoginViewController.swift in Sources */,
