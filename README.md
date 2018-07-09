@@ -15,4 +15,6 @@ Android 开发大多数铤向后者。可以findbyid 就可以了，而ios 中�
 
 Demo 也是主要是自己写。
 
-3，
+3，swift 中基础 控件的添加。。 three 和fourdemo 都是 基础控件。
+
+4，
