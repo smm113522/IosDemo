@@ -21,6 +21,14 @@ class UIScrollViewViewController: UIViewController, UIScrollViewDelegate {
         //设置代理
         scrollView.delegate = self
         scrollView.frame = self.view.bounds
+        
+//        scrollView.contentSize = CGSize(width: pageWidth * numOfPages,
+//                                        height: pageHeight)
+        scrollView.isPagingEnabled = true
+        scrollView.showsHorizontalScrollIndicator = false
+        scrollView.showsVerticalScrollIndicator = true
+        scrollView.scrollsToTop = false
+        
 //        let imageView = UIImageView(image:UIImage(named:"bigpic.jpg"))
 //        scrollView.contentSize = imageView.bounds.size
         

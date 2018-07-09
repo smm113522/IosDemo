@@ -11,7 +11,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     var tableView:UITableView?
     
-    var titleArray: [String] = ["UIActionSheet demo","UIPickerView DMEO","UIStepper demo","UIScrollView demo"]
+    var titleArray: [String] = ["UIActionSheet demo","UIPickerView DMEO","UIStepper demo","UIScrollView demo","UIScrollView1 demo","CoreMotion demo","UIDatePicker demo ","UIDatePicker1 ","UIWebViewViewController demo"]
+    
+    var list : [String] = ["hello","txt","demo","ddde","iii"]
     
 
     override func viewDidLoad() {
@@ -37,7 +39,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         return 1
     }
     //返回表格行数（也就是返回控件数）
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return self.titleArray.count
     }
     
@@ -74,6 +76,21 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             break
         case 3:
             controller = UIScrollViewViewController()
+            break
+        case 4:
+            controller = UIScrollView1ViewController()
+            break
+        case 5:
+            controller = CoreMotionViewController()
+            break
+        case 6:
+            controller = UIDatePickerViewController()
+            break
+        case 7:
+            controller = UIDatePicker1ViewController()
+            break
+        case 8:
+            controller = UIWebViewViewController()
             break
         default:
             controller = UIActionSheetViewController()
