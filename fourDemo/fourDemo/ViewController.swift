@@ -11,7 +11,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     var tableView:UITableView?
     
-    var titleArray: [String] = ["UIActionSheet demo","UIPickerView DMEO","UIStepper demo","UIScrollView demo","UIScrollView1 demo","CoreMotion demo","UIDatePicker demo ","UIDatePicker1 ","UIWebViewViewController demo"]
+    var titleArray: [String] = ["UIActionSheet demo","UIPickerView DMEO","UIStepper demo","UIScrollView demo","UIScrollView1 demo","CoreMotion demo","UIDatePicker demo ","UIDatePicker1 ","UIWebViewViewController demo","UIToolbarViewController","UITableViewViewController","UITableview 2"
+    ,"UITableView 3","UISearchBar"]
     
     var list : [String] = ["hello","txt","demo","ddde","iii"]
     
@@ -92,8 +93,23 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         case 8:
             controller = UIWebViewViewController()
             break
+        case 9:
+            controller = UIToolbarViewController()
+            break
+        case 10 :
+            controller = UITableViewViewController()
+            break
+        case 11:
+            controller = UITableView2ViewController()
+            break
+        case 12:
+            controller = UITableView3ViewController()
+            break
+        case 13:
+            controller = UISearchBarViewController()
+            break
         default:
-            controller = UIActionSheetViewController()
+            controller = UIToolbarViewController()
             break
         }
         

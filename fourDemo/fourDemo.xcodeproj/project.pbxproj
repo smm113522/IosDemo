@@ -20,6 +20,28 @@
 		AA144CE620EF572C00755F54 /* UIScrollView1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA144CE520EF572C00755F54 /* UIScrollView1ViewController.swift */; };
 		AA144CE920EF579600755F54 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA144CE820EF579600755F54 /* MyViewController.swift */; };
 		AA144CEB20EF5A6C00755F54 /* CoreMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA144CEA20EF5A6C00755F54 /* CoreMotionViewController.swift */; };
+		AA79421220F3572000C01A93 /* me_blue@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA79420520F3571E00C01A93 /* me_blue@3x.png */; };
+		AA79421320F3572000C01A93 /* me@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA79420620F3571F00C01A93 /* me@2x.png */; };
+		AA79421420F3572000C01A93 /* u=2796464312,3280625818&fm=11&gp=0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA79420720F3571F00C01A93 /* u=2796464312,3280625818&fm=11&gp=0.jpg */; };
+		AA79421520F3572000C01A93 /* circle_blue@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA79420820F3571F00C01A93 /* circle_blue@3x.png */; };
+		AA79421620F3572000C01A93 /* home_gray@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA79420920F3571F00C01A93 /* home_gray@3x.png */; };
+		AA79421720F3572000C01A93 /* home_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA79420A20F3571F00C01A93 /* home_blue@2x.png */; };
+		AA79421820F3572000C01A93 /* circle_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA79420B20F3571F00C01A93 /* circle_gray@2x.png */; };
+		AA79421920F3572000C01A93 /* home_blue@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA79420C20F3572000C01A93 /* home_blue@3x.png */; };
+		AA79421A20F3572000C01A93 /* circle_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA79420D20F3572000C01A93 /* circle_blue@2x.png */; };
+		AA79421B20F3572000C01A93 /* circle_gray@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA79420E20F3572000C01A93 /* circle_gray@3x.png */; };
+		AA79421C20F3572000C01A93 /* me@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA79420F20F3572000C01A93 /* me@3x.png */; };
+		AA79421D20F3572000C01A93 /* home_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA79421020F3572000C01A93 /* home_gray@2x.png */; };
+		AA79421E20F3572000C01A93 /* me_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA79421120F3572000C01A93 /* me_blue@2x.png */; };
+		AA79422020F3574D00C01A93 /* UIToolbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA79421F20F3574D00C01A93 /* UIToolbarViewController.swift */; };
+		AA79422220F4447600C01A93 /* UITableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA79422120F4447600C01A93 /* UITableViewViewController.swift */; };
+		AA79422420F4468800C01A93 /* Controls.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA79422320F4468800C01A93 /* Controls.plist */; };
+		AA79422620F44E1400C01A93 /* UITableView2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA79422520F44E1400C01A93 /* UITableView2ViewController.swift */; };
+		AA79422820F44F1E00C01A93 /* UITableView3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA79422720F44F1E00C01A93 /* UITableView3ViewController.swift */; };
+		AA79422A20F4550B00C01A93 /* UISearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA79422920F4550B00C01A93 /* UISearchBarViewController.swift */; };
+		AA79422E20F4618A00C01A93 /* searchbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA79422D20F4618A00C01A93 /* searchbar.storyboard */; };
+		AA79423120F463A100C01A93 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA79422F20F463A100C01A93 /* OneViewController.swift */; };
+		AA79423220F463A100C01A93 /* OneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA79423020F463A100C01A93 /* OneViewController.xib */; };
 		AA84574F20F2F1EA00E5054E /* UIWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA84574E20F2F1EA00E5054E /* UIWebViewViewController.swift */; };
 		AA8B660D20EF642400E677DC /* UIDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8B660C20EF642400E677DC /* UIDatePickerViewController.swift */; };
 		AA8B660F20EF682D00E677DC /* UIDatePicker1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8B660E20EF682D00E677DC /* UIDatePicker1ViewController.swift */; };
@@ -41,6 +63,28 @@
 		AA144CE520EF572C00755F54 /* UIScrollView1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView1ViewController.swift; sourceTree = "<group>"; };
 		AA144CE820EF579600755F54 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		AA144CEA20EF5A6C00755F54 /* CoreMotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionViewController.swift; sourceTree = "<group>"; };
+		AA79420520F3571E00C01A93 /* me_blue@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "me_blue@3x.png"; path = "../../../../../../Documents/MyAppDemo/MyApp/Resources/me_blue@3x.png"; sourceTree = "<group>"; };
+		AA79420620F3571F00C01A93 /* me@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "me@2x.png"; path = "../../../../../../Documents/MyAppDemo/MyApp/Resources/me@2x.png"; sourceTree = "<group>"; };
+		AA79420720F3571F00C01A93 /* u=2796464312,3280625818&fm=11&gp=0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "u=2796464312,3280625818&fm=11&gp=0.jpg"; path = "../../../../../../Documents/MyAppDemo/MyApp/Resources/u=2796464312,3280625818&fm=11&gp=0.jpg"; sourceTree = "<group>"; };
+		AA79420820F3571F00C01A93 /* circle_blue@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle_blue@3x.png"; path = "../../../../../../Documents/MyAppDemo/MyApp/Resources/circle_blue@3x.png"; sourceTree = "<group>"; };
+		AA79420920F3571F00C01A93 /* home_gray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home_gray@3x.png"; path = "../../../../../../Documents/MyAppDemo/MyApp/Resources/home_gray@3x.png"; sourceTree = "<group>"; };
+		AA79420A20F3571F00C01A93 /* home_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home_blue@2x.png"; path = "../../../../../../Documents/MyAppDemo/MyApp/Resources/home_blue@2x.png"; sourceTree = "<group>"; };
+		AA79420B20F3571F00C01A93 /* circle_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle_gray@2x.png"; path = "../../../../../../Documents/MyAppDemo/MyApp/Resources/circle_gray@2x.png"; sourceTree = "<group>"; };
+		AA79420C20F3572000C01A93 /* home_blue@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home_blue@3x.png"; path = "../../../../../../Documents/MyAppDemo/MyApp/Resources/home_blue@3x.png"; sourceTree = "<group>"; };
+		AA79420D20F3572000C01A93 /* circle_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle_blue@2x.png"; path = "../../../../../../Documents/MyAppDemo/MyApp/Resources/circle_blue@2x.png"; sourceTree = "<group>"; };
+		AA79420E20F3572000C01A93 /* circle_gray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle_gray@3x.png"; path = "../../../../../../Documents/MyAppDemo/MyApp/Resources/circle_gray@3x.png"; sourceTree = "<group>"; };
+		AA79420F20F3572000C01A93 /* me@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "me@3x.png"; path = "../../../../../../Documents/MyAppDemo/MyApp/Resources/me@3x.png"; sourceTree = "<group>"; };
+		AA79421020F3572000C01A93 /* home_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home_gray@2x.png"; path = "../../../../../../Documents/MyAppDemo/MyApp/Resources/home_gray@2x.png"; sourceTree = "<group>"; };
+		AA79421120F3572000C01A93 /* me_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "me_blue@2x.png"; path = "../../../../../../Documents/MyAppDemo/MyApp/Resources/me_blue@2x.png"; sourceTree = "<group>"; };
+		AA79421F20F3574D00C01A93 /* UIToolbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIToolbarViewController.swift; sourceTree = "<group>"; };
+		AA79422120F4447600C01A93 /* UITableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewViewController.swift; sourceTree = "<group>"; };
+		AA79422320F4468800C01A93 /* Controls.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Controls.plist; sourceTree = "<group>"; };
+		AA79422520F44E1400C01A93 /* UITableView2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView2ViewController.swift; sourceTree = "<group>"; };
+		AA79422720F44F1E00C01A93 /* UITableView3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView3ViewController.swift; sourceTree = "<group>"; };
+		AA79422920F4550B00C01A93 /* UISearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBarViewController.swift; sourceTree = "<group>"; };
+		AA79422D20F4618A00C01A93 /* searchbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = searchbar.storyboard; sourceTree = "<group>"; };
+		AA79422F20F463A100C01A93 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		AA79423020F463A100C01A93 /* OneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneViewController.xib; sourceTree = "<group>"; };
 		AA84574E20F2F1EA00E5054E /* UIWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewViewController.swift; sourceTree = "<group>"; };
 		AA8B660C20EF642400E677DC /* UIDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDatePickerViewController.swift; sourceTree = "<group>"; };
 		AA8B660E20EF682D00E677DC /* UIDatePicker1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDatePicker1ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +104,7 @@
 		AA144CBA20EF0AAA00755F54 = {
 			isa = PBXGroup;
 			children = (
+				AA79422B20F4616800C01A93 /* xib */,
 				AA144CE720EF578400755F54 /* view */,
 				AA144CDA20EF0ADC00755F54 /* utils */,
 				AA144CD820EF0AB600755F54 /* swight */,
@@ -79,12 +124,26 @@
 		AA144CC520EF0AAA00755F54 /* fourDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AA79420D20F3572000C01A93 /* circle_blue@2x.png */,
+				AA79420820F3571F00C01A93 /* circle_blue@3x.png */,
+				AA79420B20F3571F00C01A93 /* circle_gray@2x.png */,
+				AA79420E20F3572000C01A93 /* circle_gray@3x.png */,
+				AA79420A20F3571F00C01A93 /* home_blue@2x.png */,
+				AA79420C20F3572000C01A93 /* home_blue@3x.png */,
+				AA79421020F3572000C01A93 /* home_gray@2x.png */,
+				AA79420920F3571F00C01A93 /* home_gray@3x.png */,
+				AA79421120F3572000C01A93 /* me_blue@2x.png */,
+				AA79420520F3571E00C01A93 /* me_blue@3x.png */,
+				AA79420620F3571F00C01A93 /* me@2x.png */,
+				AA79420F20F3572000C01A93 /* me@3x.png */,
+				AA79420720F3571F00C01A93 /* u=2796464312,3280625818&fm=11&gp=0.jpg */,
 				AA144CC620EF0AAA00755F54 /* AppDelegate.swift */,
 				AA144CC820EF0AAA00755F54 /* ViewController.swift */,
 				AA144CCA20EF0AAA00755F54 /* Main.storyboard */,
 				AA144CCD20EF0AAC00755F54 /* Assets.xcassets */,
 				AA144CCF20EF0AAC00755F54 /* LaunchScreen.storyboard */,
 				AA144CD220EF0AAC00755F54 /* Info.plist */,
+				AA79422320F4468800C01A93 /* Controls.plist */,
 			);
 			path = fourDemo;
 			sourceTree = "<group>";
@@ -101,6 +160,11 @@
 				AA8B660C20EF642400E677DC /* UIDatePickerViewController.swift */,
 				AA8B660E20EF682D00E677DC /* UIDatePicker1ViewController.swift */,
 				AA84574E20F2F1EA00E5054E /* UIWebViewViewController.swift */,
+				AA79421F20F3574D00C01A93 /* UIToolbarViewController.swift */,
+				AA79422120F4447600C01A93 /* UITableViewViewController.swift */,
+				AA79422520F44E1400C01A93 /* UITableView2ViewController.swift */,
+				AA79422720F44F1E00C01A93 /* UITableView3ViewController.swift */,
+				AA79422920F4550B00C01A93 /* UISearchBarViewController.swift */,
 			);
 			path = swight;
 			sourceTree = "<group>";
@@ -119,6 +183,16 @@
 				AA144CE820EF579600755F54 /* MyViewController.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		AA79422B20F4616800C01A93 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				AA79422D20F4618A00C01A93 /* searchbar.storyboard */,
+				AA79422F20F463A100C01A93 /* OneViewController.swift */,
+				AA79423020F463A100C01A93 /* OneViewController.xib */,
+			);
+			path = xib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +253,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA79421D20F3572000C01A93 /* home_gray@2x.png in Resources */,
+				AA79421920F3572000C01A93 /* home_blue@3x.png in Resources */,
+				AA79421C20F3572000C01A93 /* me@3x.png in Resources */,
+				AA79421420F3572000C01A93 /* u=2796464312,3280625818&fm=11&gp=0.jpg in Resources */,
+				AA79421E20F3572000C01A93 /* me_blue@2x.png in Resources */,
+				AA79422420F4468800C01A93 /* Controls.plist in Resources */,
+				AA79421620F3572000C01A93 /* home_gray@3x.png in Resources */,
+				AA79423220F463A100C01A93 /* OneViewController.xib in Resources */,
 				AA144CD120EF0AAC00755F54 /* LaunchScreen.storyboard in Resources */,
+				AA79421A20F3572000C01A93 /* circle_blue@2x.png in Resources */,
+				AA79421520F3572000C01A93 /* circle_blue@3x.png in Resources */,
+				AA79421220F3572000C01A93 /* me_blue@3x.png in Resources */,
+				AA79422E20F4618A00C01A93 /* searchbar.storyboard in Resources */,
+				AA79421820F3572000C01A93 /* circle_gray@2x.png in Resources */,
 				AA144CCE20EF0AAC00755F54 /* Assets.xcassets in Resources */,
+				AA79421720F3572000C01A93 /* home_blue@2x.png in Resources */,
+				AA79421B20F3572000C01A93 /* circle_gray@3x.png in Resources */,
 				AA144CCC20EF0AAA00755F54 /* Main.storyboard in Resources */,
+				AA79421320F3572000C01A93 /* me@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,19 +282,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA79422A20F4550B00C01A93 /* UISearchBarViewController.swift in Sources */,
 				AA144CE420EF50A900755F54 /* 111.swift in Sources */,
 				AA144CE220EF3B2300755F54 /* UIScrollViewViewController.swift in Sources */,
 				AA144CE020EF352300755F54 /* UIStepperViewController.swift in Sources */,
 				AA144CEB20EF5A6C00755F54 /* CoreMotionViewController.swift in Sources */,
 				AA144CDC20EF0BE800755F54 /* UIActionSheetViewController.swift in Sources */,
 				AA144CE920EF579600755F54 /* MyViewController.swift in Sources */,
+				AA79422020F3574D00C01A93 /* UIToolbarViewController.swift in Sources */,
 				AA8B660F20EF682D00E677DC /* UIDatePicker1ViewController.swift in Sources */,
 				AA144CE620EF572C00755F54 /* UIScrollView1ViewController.swift in Sources */,
 				AA144CC920EF0AAA00755F54 /* ViewController.swift in Sources */,
+				AA79422620F44E1400C01A93 /* UITableView2ViewController.swift in Sources */,
 				AA144CDE20EF1C9C00755F54 /* UIPickerViewViewController.swift in Sources */,
 				AA144CC720EF0AAA00755F54 /* AppDelegate.swift in Sources */,
 				AA84574F20F2F1EA00E5054E /* UIWebViewViewController.swift in Sources */,
+				AA79422220F4447600C01A93 /* UITableViewViewController.swift in Sources */,
+				AA79423120F463A100C01A93 /* OneViewController.swift in Sources */,
 				AA8B660D20EF642400E677DC /* UIDatePickerViewController.swift in Sources */,
+				AA79422820F44F1E00C01A93 /* UITableView3ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
