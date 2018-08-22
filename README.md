@@ -17,4 +17,11 @@ Demo 也是主要是自己写。
 
 3，swift 中基础 控件的添加。。 three 和fourdemo 都是 基础控件。
 
-4，
+4，学习 50集基础swift 基础教程
+http://www.iqiyi.com/v_19rrnnvmbg.html?flashvars=videoIsFromQidan%3Ditemviewclkrec#vfrm=5-7-0-1
+
+Swift demo 是里面的代码和部分 很好的学习 代码。
+
+视频短而精。很好的都初学者。
+
+5.
