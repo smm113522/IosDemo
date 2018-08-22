@@ -39,7 +39,6 @@
 		AA79422620F44E1400C01A93 /* UITableView2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA79422520F44E1400C01A93 /* UITableView2ViewController.swift */; };
 		AA79422820F44F1E00C01A93 /* UITableView3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA79422720F44F1E00C01A93 /* UITableView3ViewController.swift */; };
 		AA79422A20F4550B00C01A93 /* UISearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA79422920F4550B00C01A93 /* UISearchBarViewController.swift */; };
-		AA79422E20F4618A00C01A93 /* searchbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA79422D20F4618A00C01A93 /* searchbar.storyboard */; };
 		AA79423120F463A100C01A93 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA79422F20F463A100C01A93 /* OneViewController.swift */; };
 		AA79423220F463A100C01A93 /* OneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA79423020F463A100C01A93 /* OneViewController.xib */; };
 		AA84574F20F2F1EA00E5054E /* UIWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA84574E20F2F1EA00E5054E /* UIWebViewViewController.swift */; };
@@ -82,7 +81,6 @@
 		AA79422520F44E1400C01A93 /* UITableView2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView2ViewController.swift; sourceTree = "<group>"; };
 		AA79422720F44F1E00C01A93 /* UITableView3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView3ViewController.swift; sourceTree = "<group>"; };
 		AA79422920F4550B00C01A93 /* UISearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBarViewController.swift; sourceTree = "<group>"; };
-		AA79422D20F4618A00C01A93 /* searchbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = searchbar.storyboard; sourceTree = "<group>"; };
 		AA79422F20F463A100C01A93 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		AA79423020F463A100C01A93 /* OneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneViewController.xib; sourceTree = "<group>"; };
 		AA84574E20F2F1EA00E5054E /* UIWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewViewController.swift; sourceTree = "<group>"; };
@@ -188,7 +186,6 @@
 		AA79422B20F4616800C01A93 /* xib */ = {
 			isa = PBXGroup;
 			children = (
-				AA79422D20F4618A00C01A93 /* searchbar.storyboard */,
 				AA79422F20F463A100C01A93 /* OneViewController.swift */,
 				AA79423020F463A100C01A93 /* OneViewController.xib */,
 			);
@@ -265,7 +262,6 @@
 				AA79421A20F3572000C01A93 /* circle_blue@2x.png in Resources */,
 				AA79421520F3572000C01A93 /* circle_blue@3x.png in Resources */,
 				AA79421220F3572000C01A93 /* me_blue@3x.png in Resources */,
-				AA79422E20F4618A00C01A93 /* searchbar.storyboard in Resources */,
 				AA79421820F3572000C01A93 /* circle_gray@2x.png in Resources */,
 				AA144CCE20EF0AAC00755F54 /* Assets.xcassets in Resources */,
 				AA79421720F3572000C01A93 /* home_blue@2x.png in Resources */,

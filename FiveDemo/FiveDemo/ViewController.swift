@@ -10,28 +10,51 @@ import UIKit
 
 class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource {
 
+//class ViewController: UITabBarController {
     var tableView:UITableView?
     
-    var titleArray: [String] = ["ONE"]
+    var titleArray: [String] = ["chats","tab demo","tab"]
     
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        //        self.title = "dd"
+//
+//        var vmain = MainViewController()
+//        vmain.title = "首页1"
+//
+//        var vsetting = SettingViewController()
+//        vsetting.title = "设置1"
+//
+//        let main = UINavigationController(rootViewController: vmain)
+//        main.tabBarItem.image = UIImage(named: "")
+//        main.tabBarItem.badgeValue = "!"
+//
+//        let set = UINavigationController(rootViewController: vsetting)
+//        set.tabBarItem.image = UIImage(named: "")
+//        set.tabBarItem.badgeValue = "1"
+//
+//        self.selectedIndex = 0
+//
+//        // Do any additional setup after loading the view.
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
         self.title = "demo"
         self.view.backgroundColor = UIColor.white
-        
+
         //创建表视图
         self.tableView = UITableView(frame: self.view.frame, style:.plain)
-        
+
         self.tableView!.delegate = self
         self.tableView!.dataSource = self
         //        创建一个重用的单元格
         self.tableView!.register(UITableViewCell.self,
                                  forCellReuseIdentifier: "SwiftCell")
         self.view.addSubview(self.tableView!)
-        
+
     }
     
     //在本例中，只有一个分区
@@ -69,10 +92,12 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         case 0:
             controller = ChatViewController()
         case 1:
-            controller = DemoCollectionViewController()
+//            controller = MainTabViewController()
+            self.present(MainTabViewController(), animated:true, completion:nil)
+            return
             break
         case 2:
-            controller = DemoCollectionViewController()
+            controller = TabViewController()
             break
         case 3:
             controller = DemoCollectionViewController()

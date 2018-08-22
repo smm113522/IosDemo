@@ -28,6 +28,11 @@
 		AA79427520FC827000C01A93 /* sz.png in Resources */ = {isa = PBXBuildFile; fileRef = AA79426E20FC827000C01A93 /* sz.png */; };
 		AA79427620FC827000C01A93 /* yoububble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA79426F20FC827000C01A93 /* yoububble@2x.png */; };
 		AA79428020FC829200C01A93 /* mebubble.png in Resources */ = {isa = PBXBuildFile; fileRef = AA79427920FC829100C01A93 /* mebubble.png */; };
+		AA79428720FC90C200C01A93 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA79428620FC90C200C01A93 /* MainTabViewController.swift */; };
+		AA79428920FC912100C01A93 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA79428820FC912100C01A93 /* MainViewController.swift */; };
+		AA79428B20FC913000C01A93 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA79428A20FC913000C01A93 /* SettingViewController.swift */; };
+		AA79428D20FC9B4000C01A93 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA79428C20FC9B4000C01A93 /* TabViewController.swift */; };
+		AA79428F20FD713100C01A93 /* UIPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA79428E20FD713100C01A93 /* UIPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +59,11 @@
 		AA79426E20FC827000C01A93 /* sz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sz.png; path = image/sz.png; sourceTree = "<group>"; };
 		AA79426F20FC827000C01A93 /* yoububble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "yoububble@2x.png"; path = "image/yoububble@2x.png"; sourceTree = "<group>"; };
 		AA79427920FC829100C01A93 /* mebubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mebubble.png; path = image/mebubble.png; sourceTree = "<group>"; };
+		AA79428620FC90C200C01A93 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		AA79428820FC912100C01A93 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AA79428A20FC913000C01A93 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		AA79428C20FC9B4000C01A93 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		AA79428E20FD713100C01A93 /* UIPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +96,7 @@
 		AA7941F020F308F800C01A93 /* FiveDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AA79428520FC8B1500C01A93 /* tab */,
 				AA79423A20FC494900C01A93 /* chat */,
 				AA79423320F5892D00C01A93 /* demo */,
 				AA7941FD20F308FB00C01A93 /* Info.plist */,
@@ -126,6 +137,18 @@
 				AA79423820FC2C7F00C01A93 /* ChatViewController.swift */,
 			);
 			path = chat;
+			sourceTree = "<group>";
+		};
+		AA79428520FC8B1500C01A93 /* tab */ = {
+			isa = PBXGroup;
+			children = (
+				AA79428620FC90C200C01A93 /* MainTabViewController.swift */,
+				AA79428820FC912100C01A93 /* MainViewController.swift */,
+				AA79428A20FC913000C01A93 /* SettingViewController.swift */,
+				AA79428C20FC9B4000C01A93 /* TabViewController.swift */,
+				AA79428E20FD713100C01A93 /* UIPageViewController.swift */,
+			);
+			path = tab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,14 +231,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA79425B20FC7F5C00C01A93 /* TableHeaderViewCell.swift in Sources */,
+				AA79428F20FD713100C01A93 /* UIPageViewController.swift in Sources */,
 				AA7941F420F308F800C01A93 /* ViewController.swift in Sources */,
 				AA7941F220F308F800C01A93 /* AppDelegate.swift in Sources */,
+				AA79428B20FC913000C01A93 /* SettingViewController.swift in Sources */,
+				AA79428920FC912100C01A93 /* MainViewController.swift in Sources */,
 				AA79426820FC81F400C01A93 /* UserInfo.swift in Sources */,
 				AA79425C20FC7F5C00C01A93 /* TableView.swift in Sources */,
 				AA79425D20FC7F5C00C01A93 /* TableViewCell.swift in Sources */,
+				AA79428720FC90C200C01A93 /* MainTabViewController.swift in Sources */,
 				AA79423920FC2C7F00C01A93 /* ChatViewController.swift in Sources */,
 				AA79424D20FC711F00C01A93 /* ChatDataSource.swift in Sources */,
 				AA79426720FC81F400C01A93 /* MessageItem.swift in Sources */,
+				AA79428D20FC9B4000C01A93 /* TabViewController.swift in Sources */,
 				AA79423520F5895100C01A93 /* DemoCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
