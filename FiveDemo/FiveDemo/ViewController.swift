@@ -94,7 +94,6 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         case 1:
 //            controller = MainTabViewController()
             self.present(MainTabViewController(), animated:true, completion:nil)
-            return
             break
         case 2:
             controller = TabViewController()
