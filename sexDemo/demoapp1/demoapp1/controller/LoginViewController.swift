@@ -9,9 +9,12 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
 
     @IBOutlet weak var namefield: UITextField!
     @IBOutlet weak var psdfield: UITextField!
+    
+    @IBOutlet weak var uisave: UISwitch!
     
     @IBOutlet weak var loginBtn: UIButton!
     var HUD : MBProgressHUD?
@@ -28,6 +31,16 @@ class LoginViewController: UIViewController {
         showLoading()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
 //            self.showTomast(txt: "登录成功")
+            if self.uisave.isOn {
+                UserDefaults.standard.setValue(self.namefield.text!,forKey: "name")
+                UserDefaults.standard.setValue(self.psdfield.text!,forKey: "password")
+            }else{
+                UserDefaults.standard.setValue("",forKey: "name")
+                UserDefaults.standard.setValue("",forKey: "password")
+            }
+            UserDefaults.standard.setValue(self.uisave.isOn,forKey: "save")
+//            设置同步
+            UserDefaults.standard.synchronize()
             self.performSegue(withIdentifier: "toindex", sender: nil)
         }
        
@@ -43,6 +56,20 @@ class LoginViewController: UIViewController {
         psdfield.isSecureTextEntry = true
         self.namefield.becomeFirstResponder()
         // Do any additional setup after loading the view.
+        let name = UserDefaults.standard.value(forKey: "name") as! String!
+        if !(name!.isEmpty) {
+            self.namefield.text = name
+            self.loginBtn.isEnabled = true
+        }
+        
+        self.psdfield.text = UserDefaults.standard.value(forKey: "password")as! String!
+        let issave = UserDefaults.standard.bool(forKey: "save")
+        if issave {
+            uisave.isOn = true
+        }else {
+            uisave.isOn = false
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

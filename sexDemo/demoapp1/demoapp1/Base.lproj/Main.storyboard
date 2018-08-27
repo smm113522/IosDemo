@@ -97,6 +97,7 @@
                         <outlet property="loginBtn" destination="fuM-Ag-AP7" id="lYc-Xh-a9r"/>
                         <outlet property="namefield" destination="2In-N1-2dI" id="2TK-z6-nIh"/>
                         <outlet property="psdfield" destination="Uc1-v1-oJh" id="996-7z-RLr"/>
+                        <outlet property="uisave" destination="Upe-MT-Zii" id="SbI-gg-vqs"/>
                         <segue destination="bIb-0V-bL2" kind="showDetail" identifier="toindex" id="vf1-Dn-gKa"/>
                     </connections>
                 </viewController>
