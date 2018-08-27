@@ -61,6 +61,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="ikJ-Cb-jLj"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Uc1-v1-oJh">
                                 <rect key="frame" x="139" y="162" width="202" height="30"/>
@@ -68,12 +71,15 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="uKE-1z-bXs"/>
+                                </connections>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Upe-MT-Zii">
                                 <rect key="frame" x="139" y="230" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuM-Ag-AP7">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuM-Ag-AP7">
                                 <rect key="frame" x="113" y="308" width="98" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -88,6 +94,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="通讯录" id="EC7-tO-LLM"/>
                     <connections>
+                        <outlet property="loginBtn" destination="fuM-Ag-AP7" id="lYc-Xh-a9r"/>
                         <outlet property="namefield" destination="2In-N1-2dI" id="2TK-z6-nIh"/>
                         <outlet property="psdfield" destination="Uc1-v1-oJh" id="996-7z-RLr"/>
                         <segue destination="bIb-0V-bL2" kind="showDetail" identifier="toindex" id="vf1-Dn-gKa"/>
