@@ -8,7 +8,14 @@
 
 import UIKit
 
-class IndexTableViewController: UITableViewController {
+class IndexTableViewController: UITableViewController,PeopleDelegate {
+    
+    var list : NSMutableArray = NSMutableArray();
+    
+    func dosomeIng(people: People) {
+        list.add(people)
+        self.tableView.reloadData()
+    }
 
     @IBAction func zhuXiaoOnclcked(_ sender: Any) {
         let alertController = UIAlertController(title: "是否注销", message: "真的要注销吗",
@@ -48,18 +55,22 @@ class IndexTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return list.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mycall", for: indexPath)
+        let people:People = self.list[indexPath.row] as! People
         // Configure the cell...
+        cell.textLabel?.text = people.name
+        cell.detailTextLabel?.text = people.mobile
+//        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator
+//        cell.accessoryType = UITableViewCellAccessoryType
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -68,18 +79,20 @@ class IndexTableViewController: UITableViewController {
         return true
     }
     */
-
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+//            tableView.deleteRows(at: [indexPath], with: .fade)
+            self.list.remove(indexPath.row)
+            self.list.reversed()
+        }
     }
-    */
+    func clearExtraLine(){
+        
+    }
+    
 
     /*
     // Override to support rearranging the table view.
@@ -96,14 +109,20 @@ class IndexTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        var conteroller = segue.destination
+//        if controller. {
+            
+//        }
+//        var controller:AddViewController = segue.destination as! AddViewController
+//        controller.delegate = self
     }
-    */
+    
 
 }

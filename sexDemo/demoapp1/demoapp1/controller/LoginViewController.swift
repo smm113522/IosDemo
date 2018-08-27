@@ -41,6 +41,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         psdfield.isSecureTextEntry = true
+        self.namefield.becomeFirstResponder()
         // Do any additional setup after loading the view.
     }
 

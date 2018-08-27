@@ -11,15 +11,21 @@ import UIKit
 class AddViewController: UIViewController {
 
     @IBOutlet weak var namefield: UITextField!
-    
     @IBOutlet weak var moblefield: UITextField!
-    
     @IBOutlet weak var sureBtn: UIButton!
+    
+    weak var delegate:PeopleDelegate?
+    
     @IBAction func quit(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func saveOnclicked(_ sender: Any) {
-        
+        let people = People()
+        people.name = namefield.text!
+        people.mobile = moblefield.text!
+//        var d = People(name: namefield.text!, mobile: moblefield.text!)
+//        var p = People(name: namefield.text!, mobile: moblefield.text!)
+        self.delegate?.dosomeIng(people: people)
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -30,6 +36,7 @@ class AddViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        namefield.becomeFirstResponder()
 
         // Do any additional setup after loading the view.
     }

@@ -23,8 +23,10 @@ class EditViewController: UIViewController {
     }
     @IBAction func editOnclicked(_ sender: Any) {
         sureBtn.isHidden = false
+        
     }
     @IBAction func saveOnclicked(_ sender: Any) {
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()

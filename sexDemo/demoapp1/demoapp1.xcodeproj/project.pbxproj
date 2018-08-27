@@ -15,8 +15,9 @@
 		AAFE5EEB212FEEF9000543DB /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5EEA212FEEF9000543DB /* AddViewController.swift */; };
 		AAFE5EED212FEF04000543DB /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5EEC212FEF04000543DB /* EditViewController.swift */; };
 		AAFE5EEF212FEF1E000543DB /* IndexTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5EEE212FEF1E000543DB /* IndexTableViewController.swift */; };
-		AAFE5EF1212FF80C000543DB /* 1TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5EF0212FF80C000543DB /* 1TableViewController.swift */; };
 		AAFE5EFA213004B3000543DB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5EF8213004B3000543DB /* MBProgressHUD.m */; };
+		AAFE5EFF213395D4000543DB /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5EFE213395D4000543DB /* People.swift */; };
+		AAFE5F012133A030000543DB /* PeopleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5F002133A030000543DB /* PeopleDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +31,11 @@
 		AAFE5EEA212FEEF9000543DB /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		AAFE5EEC212FEF04000543DB /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		AAFE5EEE212FEF1E000543DB /* IndexTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexTableViewController.swift; sourceTree = "<group>"; };
-		AAFE5EF0212FF80C000543DB /* 1TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1TableViewController.swift; sourceTree = "<group>"; };
 		AAFE5EF421300482000543DB /* demoapp1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "demoapp1-Bridging-Header.h"; sourceTree = "<group>"; };
 		AAFE5EF8213004B3000543DB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		AAFE5EF9213004B3000543DB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		AAFE5EFE213395D4000543DB /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		AAFE5F002133A030000543DB /* PeopleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +104,8 @@
 		AAFE5EE7212FED95000543DB /* model */ = {
 			isa = PBXGroup;
 			children = (
-				AAFE5EF0212FF80C000543DB /* 1TableViewController.swift */,
+				AAFE5EFE213395D4000543DB /* People.swift */,
+				AAFE5F002133A030000543DB /* PeopleDelegate.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -184,8 +187,9 @@
 				AAFE5EE9212FEEEB000543DB /* LoginViewController.swift in Sources */,
 				AAFE5ED4212FED72000543DB /* AppDelegate.swift in Sources */,
 				AAFE5EEB212FEEF9000543DB /* AddViewController.swift in Sources */,
-				AAFE5EF1212FF80C000543DB /* 1TableViewController.swift in Sources */,
 				AAFE5EFA213004B3000543DB /* MBProgressHUD.m in Sources */,
+				AAFE5EFF213395D4000543DB /* People.swift in Sources */,
+				AAFE5F012133A030000543DB /* PeopleDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
