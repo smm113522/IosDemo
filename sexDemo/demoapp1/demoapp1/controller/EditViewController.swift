@@ -14,16 +14,23 @@ class EditViewController: UIViewController {
     
     @IBOutlet weak var moblefield: UITextField!
     
+    @IBAction func onChange(_ sender: Any) {
+        sureBtn.isEnabled = (!(namefield.text?.isEmpty)!) && (!(moblefield.text?.isEmpty)!)
+    }
+    @IBOutlet weak var sureBtn: UIButton!
     @IBAction func quitOnclicked(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func editOnclicked(_ sender: Any) {
+        sureBtn.isHidden = false
     }
     @IBAction func saveOnclicked(_ sender: Any) {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        sureBtn.isHidden = true
+        
         // Do any additional setup after loading the view.
     }
 

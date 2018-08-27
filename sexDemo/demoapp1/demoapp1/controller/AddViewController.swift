@@ -11,13 +11,23 @@ import UIKit
 class AddViewController: UIViewController {
 
     @IBOutlet weak var namefield: UITextField!
-     
+    
     @IBOutlet weak var moblefield: UITextField!
+    
+    @IBOutlet weak var sureBtn: UIButton!
     @IBAction func quit(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func saveOnclicked(_ sender: Any) {
+        
+        self.dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func onChanged(_ sender: Any) {
+        sureBtn.isEnabled = (!(namefield.text?.isEmpty)!) && (!(moblefield.text?.isEmpty)!)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

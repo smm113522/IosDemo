@@ -11,8 +11,18 @@ import UIKit
 class IndexTableViewController: UITableViewController {
 
     @IBAction func zhuXiaoOnclcked(_ sender: Any) {
+        let alertController = UIAlertController(title: "是否注销", message: "真的要注销吗",
+                                                preferredStyle: .actionSheet)
+        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+//        有点击事件的
+        let archiveAction = UIAlertAction(title: "确定", style: .destructive, handler:  {
+            action in
+           self.dismiss(animated: true, completion: nil)
+        })
+        alertController.addAction(cancelAction)
+        alertController.addAction(archiveAction)
+        self.present(alertController, animated: true, completion: nil)
         
-        self.dismiss(animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
