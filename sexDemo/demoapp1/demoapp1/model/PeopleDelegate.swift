@@ -9,5 +9,5 @@
 import UIKit
 
 protocol PeopleDelegate: NSObjectProtocol {
-    func dosomeIng(people:People)
+    func dosomeIng(path:Int,people:People)
 }

@@ -74,7 +74,7 @@ class LoginViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         let controller = segue.destination
-        controller.title = "的通讯录联系人"
+        controller.navigationItem.title = "\(namefield.text)的通讯录联系人"
     }
     
 

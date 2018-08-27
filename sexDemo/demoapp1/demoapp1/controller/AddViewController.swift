@@ -22,10 +22,8 @@ class AddViewController: UIViewController {
     @IBAction func saveOnclicked(_ sender: Any) {
         let people = People()
         people.name = namefield.text!
-        people.mobile = moblefield.text!
-//        var d = People(name: namefield.text!, mobile: moblefield.text!)
-//        var p = People(name: namefield.text!, mobile: moblefield.text!)
-        self.delegate?.dosomeIng(people: people)
+        people.mobile = moblefield.text! 
+        self.delegate?.dosomeIng(path : -1,people : people)
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -37,7 +35,7 @@ class AddViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         namefield.becomeFirstResponder()
-
+        self.navigationItem.title = "添加联系人"
         // Do any additional setup after loading the view.
     }
 

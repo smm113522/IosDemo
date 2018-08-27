@@ -12,11 +12,15 @@ class IndexTableViewController: UITableViewController,PeopleDelegate {
     
     var list : NSMutableArray = NSMutableArray();
     
-    func dosomeIng(people: People) {
-        list.add(people)
+    func dosomeIng(path:Int,people: People) {
+        if path == -1 {
+            list.add(people)
+        }else{
+           list.replaceObject(at: path, with: people)
+        }
         self.tableView.reloadData()
     }
-
+    
     @IBAction func zhuXiaoOnclcked(_ sender: Any) {
         let alertController = UIAlertController(title: "是否注销", message: "真的要注销吗",
                                                 preferredStyle: .actionSheet)
@@ -33,7 +37,7 @@ class IndexTableViewController: UITableViewController,PeopleDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        clearExtraLine()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -58,19 +62,16 @@ class IndexTableViewController: UITableViewController,PeopleDelegate {
         return list.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mycall", for: indexPath)
         let people:People = self.list[indexPath.row] as! People
         // Configure the cell...
         cell.textLabel?.text = people.name
         cell.detailTextLabel?.text = people.mobile
-//        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator
-//        cell.accessoryType = UITableViewCellAccessoryType
+        cell.accessoryType = .disclosureIndicator
 
         return cell
     }
-    
 
     /*
     // Override to support conditional editing of the table view.
@@ -79,18 +80,22 @@ class IndexTableViewController: UITableViewController,PeopleDelegate {
         return true
     }
     */
-    
+//    把删除转换为中文
+    override func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String?{
+        return "删除"
+    }
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
-//            tableView.deleteRows(at: [indexPath], with: .fade)
-            self.list.remove(indexPath.row)
-            self.list.reversed()
+            self.list.removeObject(at:indexPath.row)
+            self.tableView?.deleteRows(at: [indexPath], with:.automatic)
         }
     }
+    
     func clearExtraLine(){
-        
+        var view = UIView()
+        view.backgroundColor = UIColor.clear
+        self.tableView.tableFooterView = view
     }
     
 
@@ -116,12 +121,21 @@ class IndexTableViewController: UITableViewController,PeopleDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        var conteroller = segue.destination
-//        if controller. {
+        let conteroller = segue.destination
+        if conteroller.isKind(of: AddViewController.classForCoder()) {
+            let controllers:AddViewController = conteroller as! AddViewController
+            controllers.delegate = self
+        }else if conteroller.isKind(of: EditViewController.classForCoder()){
+            let controllers:EditViewController = conteroller as! EditViewController
+            controllers.delegate = self
+            if let selectedItems = tableView!.indexPathsForSelectedRows {
+                let people : People = list[selectedItems[0].row] as! People
+                controllers.path = selectedItems[0].row
+                controllers.people = people
+            }
             
-//        }
-//        var controller:AddViewController = segue.destination as! AddViewController
-//        controller.delegate = self
+        }
+
     }
     
 
