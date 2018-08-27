@@ -22,6 +22,9 @@ http://www.iqiyi.com/v_19rrnnvmbg.html?flashvars=videoIsFromQidan%3Ditemviewclkr
 
 Swift demo 是里面的代码和部分 很好的学习 代码。
 
-视频短而精。很好的都初学者。
+视频短而精。很适合初学者。
 
-5.
+5. sexdemo 中写一个demo 
+登录界面 动态列表界面 添加 和修改界面 进行数据 跟新和传递。
+
+
