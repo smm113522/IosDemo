@@ -20,7 +20,7 @@ class AddViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func saveOnclicked(_ sender: Any) {
-        let people = People(coder: nil)
+        let people = People()
         people.name = namefield.text!
         people.mobile = moblefield.text! 
         self.delegate?.dosomeIng(path : -1,people : people)
