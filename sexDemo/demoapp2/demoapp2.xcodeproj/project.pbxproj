@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		AAFE5F0F2134D987000543DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5F0E2134D987000543DB /* AppDelegate.swift */; };
-		AAFE5F112134D987000543DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5F102134D987000543DB /* ViewController.swift */; };
-		AAFE5F142134D987000543DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFE5F122134D987000543DB /* Main.storyboard */; };
 		AAFE5F162134D98A000543DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFE5F152134D98A000543DB /* Assets.xcassets */; };
 		AAFE5F192134D98A000543DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFE5F172134D98A000543DB /* LaunchScreen.storyboard */; };
+		AAFE5F8B21352524000543DB /* PPTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5F8A21352524000543DB /* PPTabBarController.swift */; };
+		AAFE5F922135256D000543DB /* PPViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAFE5F8D2135256C000543DB /* PPViewController1.xib */; };
+		AAFE5F932135256D000543DB /* PPViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5F8E2135256C000543DB /* PPViewController3.swift */; };
+		AAFE5F942135256D000543DB /* PPViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5F8F2135256D000543DB /* PPViewController4.swift */; };
+		AAFE5F952135256D000543DB /* PPViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5F902135256D000543DB /* PPViewController1.swift */; };
+		AAFE5F962135256D000543DB /* PPViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5F912135256D000543DB /* PPViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AAFE5F0B2134D987000543DB /* demoapp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoapp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFE5F0E2134D987000543DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AAFE5F102134D987000543DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AAFE5F132134D987000543DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAFE5F152134D98A000543DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAFE5F182134D98A000543DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAFE5F1A2134D98B000543DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAFE5F8A21352524000543DB /* PPTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPTabBarController.swift; sourceTree = "<group>"; };
+		AAFE5F8D2135256C000543DB /* PPViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPViewController1.xib; sourceTree = "<group>"; };
+		AAFE5F8E2135256C000543DB /* PPViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPViewController3.swift; sourceTree = "<group>"; };
+		AAFE5F8F2135256D000543DB /* PPViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPViewController4.swift; sourceTree = "<group>"; };
+		AAFE5F902135256D000543DB /* PPViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPViewController1.swift; sourceTree = "<group>"; };
+		AAFE5F912135256D000543DB /* PPViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		AAFE5F0D2134D987000543DB /* demoapp2 */ = {
 			isa = PBXGroup;
 			children = (
-				AAFE5F0E2134D987000543DB /* AppDelegate.swift */,
-				AAFE5F102134D987000543DB /* ViewController.swift */,
-				AAFE5F122134D987000543DB /* Main.storyboard */,
+				AAFE5F8C2135254C000543DB /* class */,
 				AAFE5F152134D98A000543DB /* Assets.xcassets */,
 				AAFE5F172134D98A000543DB /* LaunchScreen.storyboard */,
 				AAFE5F1A2134D98B000543DB /* Info.plist */,
 			);
 			path = demoapp2;
+			sourceTree = "<group>";
+		};
+		AAFE5F8C2135254C000543DB /* class */ = {
+			isa = PBXGroup;
+			children = (
+				AAFE5F9821352963000543DB /* controller */,
+				AAFE5F972135295D000543DB /* main */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		AAFE5F972135295D000543DB /* main */ = {
+			isa = PBXGroup;
+			children = (
+				AAFE5F0E2134D987000543DB /* AppDelegate.swift */,
+				AAFE5F8A21352524000543DB /* PPTabBarController.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		AAFE5F9821352963000543DB /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AAFE5F902135256D000543DB /* PPViewController1.swift */,
+				AAFE5F8D2135256C000543DB /* PPViewController1.xib */,
+				AAFE5F912135256D000543DB /* PPViewController2.swift */,
+				AAFE5F8E2135256C000543DB /* PPViewController3.swift */,
+				AAFE5F8F2135256D000543DB /* PPViewController4.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +160,7 @@
 			files = (
 				AAFE5F192134D98A000543DB /* LaunchScreen.storyboard in Resources */,
 				AAFE5F162134D98A000543DB /* Assets.xcassets in Resources */,
-				AAFE5F142134D987000543DB /* Main.storyboard in Resources */,
+				AAFE5F922135256D000543DB /* PPViewController1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +171,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAFE5F112134D987000543DB /* ViewController.swift in Sources */,
+				AAFE5F952135256D000543DB /* PPViewController1.swift in Sources */,
+				AAFE5F932135256D000543DB /* PPViewController3.swift in Sources */,
+				AAFE5F942135256D000543DB /* PPViewController4.swift in Sources */,
 				AAFE5F0F2134D987000543DB /* AppDelegate.swift in Sources */,
+				AAFE5F962135256D000543DB /* PPViewController2.swift in Sources */,
+				AAFE5F8B21352524000543DB /* PPTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AAFE5F122134D987000543DB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAFE5F132134D987000543DB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AAFE5F172134D98A000543DB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
