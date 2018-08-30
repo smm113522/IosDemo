@@ -14,6 +14,7 @@ class PPViewController2: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "订单"
         // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {

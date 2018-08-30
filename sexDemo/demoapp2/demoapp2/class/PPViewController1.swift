@@ -35,10 +35,8 @@ class PPViewController1: UIViewController {
     }
     
     @IBAction func postAction() {
+        
         NetworkTools.POST(url: "http://app.u17.com/v3/appV3_3/ios/phone/rank/list", params: nil, success: { (json) in
-            
-            self.showLable.text = json.description
-            
             let decoder = JSONDecoder()
             let model = try? decoder.decode(DMModel.self, from: json)
             print(model?.code)
