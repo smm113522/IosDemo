@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA9A5F2321369660005AF71B /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A5F2221369660005AF71B /* NetworkTools.swift */; };
+		AA9A5F27213696A9005AF71B /* DMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A5F2621369697005AF71B /* DMModel.swift */; };
+		AA9A5F2C213696BF005AF71B /* TSaveFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A5F28213696BC005AF71B /* TSaveFiles.swift */; };
+		AA9A5F2D213696BF005AF71B /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A5F29213696BD005AF71B /* HttpRequest.swift */; };
+		AA9A5F2E213696BF005AF71B /* TStrInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A5F2A213696BE005AF71B /* TStrInt.swift */; };
+		AA9A5F2F213696BF005AF71B /* THUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A5F2B213696BF005AF71B /* THUD.swift */; };
+		AA9A5F31213696CE005AF71B /* JRequets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A5F30213696CE005AF71B /* JRequets.swift */; };
+		AA9A5F32213696D4005AF71B /* DMAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A5F2521369697005AF71B /* DMAPI.swift */; };
 		AAFE5F0F2134D987000543DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5F0E2134D987000543DB /* AppDelegate.swift */; };
 		AAFE5F162134D98A000543DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFE5F152134D98A000543DB /* Assets.xcassets */; };
 		AAFE5F192134D98A000543DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFE5F172134D98A000543DB /* LaunchScreen.storyboard */; };
@@ -16,9 +24,20 @@
 		AAFE5F942135256D000543DB /* PPViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5F8F2135256D000543DB /* PPViewController4.swift */; };
 		AAFE5F952135256D000543DB /* PPViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5F902135256D000543DB /* PPViewController1.swift */; };
 		AAFE5F962135256D000543DB /* PPViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5F912135256D000543DB /* PPViewController2.swift */; };
+		BD48EA4B9ABCC911DB296A81 /* Pods_demoapp2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111A7E7C65F2304DFFA26CB7 /* Pods_demoapp2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		111A7E7C65F2304DFFA26CB7 /* Pods_demoapp2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demoapp2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C70EE9ADFE26B7F867D3456 /* Pods-demoapp2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demoapp2.release.xcconfig"; path = "Pods/Target Support Files/Pods-demoapp2/Pods-demoapp2.release.xcconfig"; sourceTree = "<group>"; };
+		AA9A5F2221369660005AF71B /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		AA9A5F2521369697005AF71B /* DMAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMAPI.swift; sourceTree = "<group>"; };
+		AA9A5F2621369697005AF71B /* DMModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMModel.swift; sourceTree = "<group>"; };
+		AA9A5F28213696BC005AF71B /* TSaveFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSaveFiles.swift; sourceTree = "<group>"; };
+		AA9A5F29213696BD005AF71B /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		AA9A5F2A213696BE005AF71B /* TStrInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TStrInt.swift; sourceTree = "<group>"; };
+		AA9A5F2B213696BF005AF71B /* THUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THUD.swift; sourceTree = "<group>"; };
+		AA9A5F30213696CE005AF71B /* JRequets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRequets.swift; sourceTree = "<group>"; };
 		AAFE5F0B2134D987000543DB /* demoapp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoapp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFE5F0E2134D987000543DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAFE5F152134D98A000543DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,6 +49,7 @@
 		AAFE5F8F2135256D000543DB /* PPViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPViewController4.swift; sourceTree = "<group>"; };
 		AAFE5F902135256D000543DB /* PPViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPViewController1.swift; sourceTree = "<group>"; };
 		AAFE5F912135256D000543DB /* PPViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPViewController2.swift; sourceTree = "<group>"; };
+		D9C1DE23B9919175F2A928AE /* Pods-demoapp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demoapp2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-demoapp2/Pods-demoapp2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +57,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD48EA4B9ABCC911DB296A81 /* Pods_demoapp2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA9A5F33213698B9005AF71B /* net */ = {
+			isa = PBXGroup;
+			children = (
+				AA9A5F2521369697005AF71B /* DMAPI.swift */,
+				AA9A5F30213696CE005AF71B /* JRequets.swift */,
+				AA9A5F29213696BD005AF71B /* HttpRequest.swift */,
+				AA9A5F2B213696BF005AF71B /* THUD.swift */,
+				AA9A5F28213696BC005AF71B /* TSaveFiles.swift */,
+				AA9A5F2A213696BE005AF71B /* TStrInt.swift */,
+				AA9A5F2621369697005AF71B /* DMModel.swift */,
+				AA9A5F2221369660005AF71B /* NetworkTools.swift */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
 		AAFE5F022134D987000543DB = {
 			isa = PBXGroup;
 			children = (
 				AAFE5F0D2134D987000543DB /* demoapp2 */,
 				AAFE5F0C2134D987000543DB /* Products */,
+				C5A1627892836F04CEA7946E /* Pods */,
+				B1525EF57D8BF9134363D689 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +129,7 @@
 		AAFE5F9821352963000543DB /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				AA9A5F33213698B9005AF71B /* net */,
 				AAFE5F902135256D000543DB /* PPViewController1.swift */,
 				AAFE5F8D2135256C000543DB /* PPViewController1.xib */,
 				AAFE5F912135256D000543DB /* PPViewController2.swift */,
@@ -100,6 +139,23 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
+		B1525EF57D8BF9134363D689 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				111A7E7C65F2304DFFA26CB7 /* Pods_demoapp2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5A1627892836F04CEA7946E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9C1DE23B9919175F2A928AE /* Pods-demoapp2.debug.xcconfig */,
+				4C70EE9ADFE26B7F867D3456 /* Pods-demoapp2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAFE5F1D2134D98B000543DB /* Build configuration list for PBXNativeTarget "demoapp2" */;
 			buildPhases = (
+				4EEF898325ACDC1348C627B9 /* [CP] Check Pods Manifest.lock */,
 				AAFE5F072134D987000543DB /* Sources */,
 				AAFE5F082134D987000543DB /* Frameworks */,
 				AAFE5F092134D987000543DB /* Resources */,
+				B5C20B6ADC306970F5AFC9B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,17 +224,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4EEF898325ACDC1348C627B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-demoapp2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5C20B6ADC306970F5AFC9B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-demoapp2/Pods-demoapp2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-demoapp2/Pods-demoapp2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AAFE5F072134D987000543DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9A5F2321369660005AF71B /* NetworkTools.swift in Sources */,
+				AA9A5F2D213696BF005AF71B /* HttpRequest.swift in Sources */,
 				AAFE5F952135256D000543DB /* PPViewController1.swift in Sources */,
+				AA9A5F27213696A9005AF71B /* DMModel.swift in Sources */,
 				AAFE5F932135256D000543DB /* PPViewController3.swift in Sources */,
 				AAFE5F942135256D000543DB /* PPViewController4.swift in Sources */,
 				AAFE5F0F2134D987000543DB /* AppDelegate.swift in Sources */,
 				AAFE5F962135256D000543DB /* PPViewController2.swift in Sources */,
 				AAFE5F8B21352524000543DB /* PPTabBarController.swift in Sources */,
+				AA9A5F2E213696BF005AF71B /* TStrInt.swift in Sources */,
+				AA9A5F2F213696BF005AF71B /* THUD.swift in Sources */,
+				AA9A5F32213696D4005AF71B /* DMAPI.swift in Sources */,
+				AA9A5F2C213696BF005AF71B /* TSaveFiles.swift in Sources */,
+				AA9A5F31213696CE005AF71B /* JRequets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +421,7 @@
 		};
 		AAFE5F1E2134D98B000543DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9C1DE23B9919175F2A928AE /* Pods-demoapp2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -328,6 +440,7 @@
 		};
 		AAFE5F1F2134D98B000543DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C70EE9ADFE26B7F867D3456 /* Pods-demoapp2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
