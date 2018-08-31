@@ -18,10 +18,10 @@ class PPTabBarController: UITabBarController {
         let controller3 = PPViewController3()
         let controller4 = PPViewController4()
         
-        setupChildController(controller: controller1, title: "点餐", image: "dinner", selectedImage: "dinner_1")
-        setupChildController(controller: controller2, title: "订单", image: "order", selectedImage: "order_1")
-        setupChildController(controller: controller3, title: "充值", image: "top_up", selectedImage: "top_up_1")
-        setupChildController(controller: controller4, title: "我的", image: "my", selectedImage: "my_1")
+        setupChildController(controller: controller1, title: "网络", image: "dinner", selectedImage: "dinner_1")
+        setupChildController(controller: controller2, title: "列表", image: "order", selectedImage: "order_1")
+        setupChildController(controller: controller3, title: "数据库", image: "top_up", selectedImage: "top_up_1")
+        setupChildController(controller: controller4, title: "线程", image: "my", selectedImage: "my_1")
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.darkGray], for: .selected)
         
         /*

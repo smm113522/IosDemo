@@ -13,13 +13,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         
         self.window?.backgroundColor = UIColor.white
+        
+        //判断当前版本是否第一次启动
+        if UserDefaults.isFirstLaunchOfNewVersion() {
+            //显示新功能介绍页
+            print("当前版本第一次启动")
+            
+            self.window?.rootViewController = IntroductionViewController.init()
+            self.window?.makeKeyAndVisible()
+            return true
+            
+        }
         
         self.window?.rootViewController = PPTabBarController.init()
         
@@ -50,6 +60,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+}
 
+extension UserDefaults {
+    //应用第一次启动
+    static func isFirstLaunch() -> Bool {
+        let hasBeenLaunched = "hasBeenLaunched"
+        let isFirstLaunch = !UserDefaults.standard.bool(forKey: hasBeenLaunched)
+        if isFirstLaunch {
+            UserDefaults.standard.set(true, forKey: hasBeenLaunched)
+            UserDefaults.standard.synchronize()
+        }
+        return isFirstLaunch
+    }
+    
+    //当前版本第一次启动
+    static func isFirstLaunchOfNewVersion() -> Bool {
+        //主程序版本号
+        let infoDictionary = Bundle.main.infoDictionary!
+        let majorVersion = infoDictionary["CFBundleShortVersionString"] as! String
+        
+        //上次启动的版本号
+        let hasBeenLaunchedOfNewVersion = "hasBeenLaunchedOfNewVersion"
+        let lastLaunchVersion = UserDefaults.standard.string(forKey:
+            hasBeenLaunchedOfNewVersion)
+        
+        //版本号比较
+        let isFirstLaunchOfNewVersion = majorVersion != lastLaunchVersion
+        if isFirstLaunchOfNewVersion {
+            UserDefaults.standard.set(majorVersion, forKey:
+                hasBeenLaunchedOfNewVersion)
+            UserDefaults.standard.synchronize()
+        }
+        return isFirstLaunchOfNewVersion
+    }
 }
 

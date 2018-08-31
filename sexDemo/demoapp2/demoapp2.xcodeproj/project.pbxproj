@@ -15,6 +15,8 @@
 		AA9A5F2F213696BF005AF71B /* THUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A5F2B213696BF005AF71B /* THUD.swift */; };
 		AA9A5F31213696CE005AF71B /* JRequets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A5F30213696CE005AF71B /* JRequets.swift */; };
 		AA9A5F32213696D4005AF71B /* DMAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A5F2521369697005AF71B /* DMAPI.swift */; };
+		AA9A5F372137DE7B005AF71B /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A5F362137DE7B005AF71B /* IntroductionViewController.swift */; };
+		AA9A5F3A2138D8EA005AF71B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A5F392138D8EA005AF71B /* ViewModel.swift */; };
 		AAFE5F0F2134D987000543DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE5F0E2134D987000543DB /* AppDelegate.swift */; };
 		AAFE5F162134D98A000543DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFE5F152134D98A000543DB /* Assets.xcassets */; };
 		AAFE5F192134D98A000543DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFE5F172134D98A000543DB /* LaunchScreen.storyboard */; };
@@ -38,6 +40,9 @@
 		AA9A5F2A213696BE005AF71B /* TStrInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TStrInt.swift; sourceTree = "<group>"; };
 		AA9A5F2B213696BF005AF71B /* THUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THUD.swift; sourceTree = "<group>"; };
 		AA9A5F30213696CE005AF71B /* JRequets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRequets.swift; sourceTree = "<group>"; };
+		AA9A5F362137DE7B005AF71B /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
+		AA9A5F392138D8EA005AF71B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AA9A5F3C2138DA67005AF71B /* demoapp2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "demoapp2-Bridging-Header.h"; sourceTree = "<group>"; };
 		AAFE5F0B2134D987000543DB /* demoapp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoapp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFE5F0E2134D987000543DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAFE5F152134D98A000543DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +84,22 @@
 			path = net;
 			sourceTree = "<group>";
 		};
+		AA9A5F382138D8CE005AF71B /* remesh */ = {
+			isa = PBXGroup;
+			children = (
+				AA9A5F392138D8EA005AF71B /* ViewModel.swift */,
+			);
+			path = remesh;
+			sourceTree = "<group>";
+		};
+		AA9A5F3B2138DA51005AF71B /* oc */ = {
+			isa = PBXGroup;
+			children = (
+				AA9A5F3C2138DA67005AF71B /* demoapp2-Bridging-Header.h */,
+			);
+			path = oc;
+			sourceTree = "<group>";
+		};
 		AAFE5F022134D987000543DB = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +132,7 @@
 		AAFE5F8C2135254C000543DB /* class */ = {
 			isa = PBXGroup;
 			children = (
+				AA9A5F3B2138DA51005AF71B /* oc */,
 				AAFE5F9821352963000543DB /* controller */,
 				AAFE5F972135295D000543DB /* main */,
 			);
@@ -129,12 +151,14 @@
 		AAFE5F9821352963000543DB /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				AA9A5F382138D8CE005AF71B /* remesh */,
 				AA9A5F33213698B9005AF71B /* net */,
 				AAFE5F902135256D000543DB /* PPViewController1.swift */,
 				AAFE5F8D2135256C000543DB /* PPViewController1.xib */,
 				AAFE5F912135256D000543DB /* PPViewController2.swift */,
 				AAFE5F8E2135256C000543DB /* PPViewController3.swift */,
 				AAFE5F8F2135256D000543DB /* PPViewController4.swift */,
+				AA9A5F362137DE7B005AF71B /* IntroductionViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -190,6 +214,7 @@
 				TargetAttributes = {
 					AAFE5F0A2134D987000543DB = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -252,6 +277,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-demoapp2/Pods-demoapp2-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
@@ -259,6 +285,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
@@ -275,10 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA9A5F2321369660005AF71B /* NetworkTools.swift in Sources */,
+				AA9A5F372137DE7B005AF71B /* IntroductionViewController.swift in Sources */,
 				AA9A5F2D213696BF005AF71B /* HttpRequest.swift in Sources */,
 				AAFE5F952135256D000543DB /* PPViewController1.swift in Sources */,
 				AA9A5F27213696A9005AF71B /* DMModel.swift in Sources */,
 				AAFE5F932135256D000543DB /* PPViewController3.swift in Sources */,
+				AA9A5F3A2138D8EA005AF71B /* ViewModel.swift in Sources */,
 				AAFE5F942135256D000543DB /* PPViewController4.swift in Sources */,
 				AAFE5F0F2134D987000543DB /* AppDelegate.swift in Sources */,
 				AAFE5F962135256D000543DB /* PPViewController2.swift in Sources */,
@@ -424,6 +453,7 @@
 			baseConfigurationReference = D9C1DE23B9919175F2A928AE /* Pods-demoapp2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GA9YQQXAZ2;
 				INFOPLIST_FILE = demoapp2/Info.plist;
@@ -433,6 +463,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.demoapp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "demoapp2/class/oc/demoapp2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -443,6 +475,7 @@
 			baseConfigurationReference = 4C70EE9ADFE26B7F867D3456 /* Pods-demoapp2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GA9YQQXAZ2;
 				INFOPLIST_FILE = demoapp2/Info.plist;
@@ -452,6 +485,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.demoapp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "demoapp2/class/oc/demoapp2-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

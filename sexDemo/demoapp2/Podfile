@@ -8,5 +8,6 @@ target 'demoapp2' do
     pod 'MBProgressHUD'
     
     pod 'Moya'
-    pod 'Alamofire' 
+    pod 'Alamofire'
+    pod 'MJRefresh'
 end

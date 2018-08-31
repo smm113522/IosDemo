@@ -13,7 +13,7 @@ class PPViewController3: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.title = "充值"
+        self.navigationItem.title = "数据库"
         // Do any additional setup after loading the view.
     }
 
